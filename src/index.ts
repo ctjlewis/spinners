@@ -1,4 +1,4 @@
-import { LogStyles, log, style } from "@tsmodule/log";
+import { LogStyles, log, style, clear } from "@tsmodule/log";
 import cliSpinners from "cli-spinners";
 // import { log } from "debug-logging";
 
@@ -74,8 +74,7 @@ export const spinners = async (
             }
           }
 
-          // eslint-disable-next-line no-console
-          console.clear();
+          clear();
           log(`${frameOutput}`);
           await new Promise((resolve) => setTimeout(resolve, interval));
         }
