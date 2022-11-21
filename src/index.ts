@@ -102,10 +102,12 @@ export const spinners = async (
     ),
   ]);
 
+  const spinnerResults = Object.fromEntries(spinnerStates);
+
   if (failed > 0) {
     // throw `${failed} spinner(s) failed.`;
-    throw Object.fromEntries(spinnerErrors);
+    throw spinnerResults;
   }
 
-  return null;
+  return spinnerResults;
 };
