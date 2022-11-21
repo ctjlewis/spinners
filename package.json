@@ -1,30 +1,45 @@
 {
-  "name": "bun-spinners",
+  "name": "@tsmodule/spinners",
   "license": "MIT",
-  "version": "0.2.0",
+  "version": "0.0.1",
   "type": "module",
-  "types": "./src/index.ts",
+  "types": "dist/index.d.ts",
   "exports": {
-    ".": "./src/index.ts",
-    "./*": "./src/*/index.ts"
+    "./package.json": "./package.json",
+    ".": "./dist/index.js",
+    "./*": "./dist/*/index.js"
   },
   "devDependencies": {
-    "bun-types": "latest",
-    "eslint": "^8.22.0"
+    "@tsmodule/tsmodule": "^40.19.0",
+    "@types/node": "^18.11.9",
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "@typescript-eslint/parser": "^5.43.0",
+    "ava": "^5.1.0",
+    "eslint": "^8.28.0",
+    "typescript": "^4.9.3"
   },
   "dependencies": {
-    "bun-style": "^0.3.0",
-    "cli-spinners": "^2.7.0"
+    "@tsmodule/log": "^0.0.7",
+    "cli-spinners": "^2.7.0",
+    "debug-logging": "^4.0.4"
   },
   "files": [
-    "tsconfig.json",
-    "bun.lockb",
-    "node_modules.bun",
-    "assets/**/*",
-    "src/**/*"
+    "dist"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ctjlewis/bun-spinners.git"
+  },
+  "platform": "node",
+  "scripts": {
+    "dev": "tsmodule dev",
+    "build": "tsmodule build",
+    "test": "tsmodule test/index.test.ts",
+    "pretest": "tsmodule build",
+    "prepublishOnly": "yarn test",
+    "lint": "eslint src --fix"
+  },
+  "engines": {
+    "node": ">=14"
   }
 }

@@ -1,5 +1,6 @@
-import { LogStyles, style } from "bun-style";
-import * as cliSpinners from "cli-spinners";
+import { LogStyles, log, style } from "@tsmodule/log";
+import cliSpinners from "cli-spinners";
+// import { log } from "debug-logging";
 
 export interface SpinnerConfigs {
   [text: string]: () => Promise<void>;
@@ -48,26 +49,27 @@ export const spinners = async (
             switch (state) {
               case "success":
                 prefix = "✓";
-                lineStyles.push("green")
+                lineStyles.push("green");
                 break;
 
               case "failure":
                 prefix = "✗";
-                lineStyles.push("red")
+                lineStyles.push("red");
                 break;
             }
 
-            frameOutput += style(`\n  ${prefix}  ${text}\n\r`, lineStyles);
+            frameOutput += style(`\n  ${prefix}  ${text}`, lineStyles);
 
             const errors = spinnerErrors.get(text);
             if (errors) {
-              frameOutput += style(`     ${errors}\n\r`, ["red"]);
+              frameOutput += style(`     ${errors}`, ["red"]);
             }
           }
 
           // console.log("\033[H\033[J");
+          // eslint-disable-next-line no-console
           console.clear();
-          console.log(style(`${frameOutput}\n`, ["grey"]));
+          log(`${frameOutput}\n`, ["grey"]);
           await new Promise((resolve) => setTimeout(resolve, interval));
         }
       }
@@ -84,7 +86,7 @@ export const spinners = async (
             spinnerStates.set(text, "success");
           } catch (e) {
             spinnerStates.set(text, "failure");
-            spinnerErrors.set(text, e?.toString());
+            spinnerErrors.set(text, String(e));
             failed++;
           } finally {
             finished++;

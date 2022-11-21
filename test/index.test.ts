@@ -1,4 +1,4 @@
-import { spinners } from "../src";
+import { spinners } from "../dist/index.js";
 
 const sleep = (ms: number) => new Promise(
   (resolve) => setTimeout(resolve, ms)
@@ -18,11 +18,14 @@ try {
     "Setting flaps...": async () => {
       await sleep(2000);
     }
-  })
+  });
 } catch (e) {
   await spinners({
     "Aborting takeoff...": async () => {
       await sleep(3000);
     }
   });
+
+  // eslint-disable-next-line no-console
+  console.log(e);
 }

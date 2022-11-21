@@ -1,0 +1,866 @@
+yarn run v1.22.19
+$ tsmodule build
+
+  TS Module [production]  
+
+✔ Compiled TSX files.
+✔ Compiled TS/JS files.
+✔ Copied non-source files to dist/.
+✔ Normalized import specifiers.
+
+Bundle styles not found for this project.
+
+Checked: src/components/index.css
+
+
+  Running post-build setup.  
+
+$ /Users/lewis/Development/bun-spinners/node_modules/.bin/tsc -p tsconfig.json --moduleResolution Node --module ESNext --target ESNext --esModuleInterop true --incremental false --rootDir src --outDir dist --declaration true --noEmit false --emitDeclarationOnly true
+✔ Generated declarations for 1 files.
+
+Build complete.
+
+$ tsmodule test/index.test.ts
+
+$ node --no-warnings --loader file:///Users/lewis/Development/bun-spinners/node_modules/@tsmodule/tsmodule/dist/loader/index.js test/index.test.ts
+
+    
+  ⠋  Starting APU...
+  
+  ⠋  Starting engines...
+  
+  ⠋  Setting flaps...
+
+
+
+    
+  ⠙  Starting APU...
+  
+  ⠙  Starting engines...
+  
+  ⠙  Setting flaps...
+
+
+
+    
+  ⠹  Starting APU...
+  
+  ⠹  Starting engines...
+  
+  ⠹  Setting flaps...
+
+
+
+    
+  ⠸  Starting APU...
+  
+  ⠸  Starting engines...
+  
+  ⠸  Setting flaps...
+
+
+
+    
+  ⠼  Starting APU...
+  
+  ⠼  Starting engines...
+  
+  ⠼  Setting flaps...
+
+
+
+    
+  ⠴  Starting APU...
+  
+  ⠴  Starting engines...
+  
+  ⠴  Setting flaps...
+
+
+
+    
+  ⠦  Starting APU...
+  
+  ⠦  Starting engines...
+  
+  ⠦  Setting flaps...
+
+
+
+    
+  ⠧  Starting APU...
+  
+  ⠧  Starting engines...
+  
+  ⠧  Setting flaps...
+
+
+
+    
+  ⠇  Starting APU...
+  
+  ⠇  Starting engines...
+  
+  ⠇  Setting flaps...
+
+
+
+    
+  ⠏  Starting APU...
+  
+  ⠏  Starting engines...
+  
+  ⠏  Setting flaps...
+
+
+
+    
+  ⠋  Starting APU...
+  
+  ⠋  Starting engines...
+  
+  ⠋  Setting flaps...
+
+
+
+    
+  ⠙  Starting APU...
+  
+  ⠙  Starting engines...
+  
+  ⠙  Setting flaps...
+
+
+
+    
+  ⠹  Starting APU...
+  
+  ⠹  Starting engines...
+  
+  ⠹  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠸  Starting engines...
+  
+  ⠸  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠼  Starting engines...
+  
+  ⠼  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠴  Starting engines...
+  
+  ⠴  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠦  Starting engines...
+  
+  ⠦  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠧  Starting engines...
+  
+  ⠧  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠇  Starting engines...
+  
+  ⠇  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠏  Starting engines...
+  
+  ⠏  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠋  Starting engines...
+  
+  ⠋  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠙  Starting engines...
+  
+  ⠙  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠹  Starting engines...
+  
+  ⠹  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠸  Starting engines...
+  
+  ⠸  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠼  Starting engines...
+  
+  ⠼  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠴  Starting engines...
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠦  Starting engines...
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠧  Starting engines...
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠇  Starting engines...
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠏  Starting engines...
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠋  Starting engines...
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠙  Starting engines...
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠹  Starting engines...
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠸  Starting engines...
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠼  Starting engines...
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠴  Starting engines...
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠦  Starting engines...
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠧  Starting engines...
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠇  Starting engines...
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠏  Starting engines...
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠋  Starting engines...
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠙  Starting engines...
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠹  Starting engines...
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠸  Starting engines...
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠼  Starting engines...
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠴  Starting engines...
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠦  Starting engines...
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠧  Starting engines...
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠇  Starting engines...
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠏  Starting engines...
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠋  Starting engines...
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠙  Starting engines...
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠹  Starting engines...
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠸  Starting engines...
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠼  Starting engines...
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠴  Starting engines...
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠦  Starting engines...
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠧  Starting engines...
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠇  Starting engines...
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠏  Starting engines...
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠋  Starting engines...
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ⠙  Starting engines...
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ✗  Starting engines...
+       Fuel mixture set to cutoff.
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ✗  Starting engines...
+       Fuel mixture set to cutoff.
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ✗  Starting engines...
+       Fuel mixture set to cutoff.
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ✗  Starting engines...
+       Fuel mixture set to cutoff.
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ✗  Starting engines...
+       Fuel mixture set to cutoff.
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ✗  Starting engines...
+       Fuel mixture set to cutoff.
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ✗  Starting engines...
+       Fuel mixture set to cutoff.
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ✓  Starting APU...
+  
+  ✗  Starting engines...
+       Fuel mixture set to cutoff.
+  
+  ✓  Setting flaps...
+
+
+
+    
+  ⠋  Aborting takeoff...
+
+
+
+    
+  ⠙  Aborting takeoff...
+
+
+
+    
+  ⠹  Aborting takeoff...
+
+
+
+    
+  ⠸  Aborting takeoff...
+
+
+
+    
+  ⠼  Aborting takeoff...
+
+
+
+    
+  ⠴  Aborting takeoff...
+
+
+
+    
+  ⠦  Aborting takeoff...
+
+
+
+    
+  ⠧  Aborting takeoff...
+
+
+
+    
+  ⠇  Aborting takeoff...
+
+
+
+    
+  ⠏  Aborting takeoff...
+
+
+
+    
+  ⠋  Aborting takeoff...
+
+
+
+    
+  ⠙  Aborting takeoff...
+
+
+
+    
+  ⠹  Aborting takeoff...
+
+
+
+    
+  ⠸  Aborting takeoff...
+
+
+
+    
+  ⠼  Aborting takeoff...
+
+
+
+    
+  ⠴  Aborting takeoff...
+
+
+
+    
+  ⠦  Aborting takeoff...
+
+
+
+    
+  ⠧  Aborting takeoff...
+
+
+
+    
+  ⠇  Aborting takeoff...
+
+
+
+    
+  ⠏  Aborting takeoff...
+
+
+
+    
+  ⠋  Aborting takeoff...
+
+
+
+    
+  ⠙  Aborting takeoff...
+
+
+
+    
+  ⠹  Aborting takeoff...
+
+
+
+    
+  ⠸  Aborting takeoff...
+
+
+
+    
+  ⠼  Aborting takeoff...
+
+
+
+    
+  ⠴  Aborting takeoff...
+
+
+
+    
+  ⠦  Aborting takeoff...
+
+
+
+    
+  ⠧  Aborting takeoff...
+
+
+
+    
+  ⠇  Aborting takeoff...
+
+
+
+    
+  ⠏  Aborting takeoff...
+
+
+
+    
+  ⠋  Aborting takeoff...
+
+
+
+    
+  ⠙  Aborting takeoff...
+
+
+
+    
+  ⠹  Aborting takeoff...
+
+
+
+    
+  ⠸  Aborting takeoff...
+
+
+
+    
+  ⠼  Aborting takeoff...
+
+
+
+    
+  ⠴  Aborting takeoff...
+
+
+
+    
+  ⠦  Aborting takeoff...
+
+
+
+    
+  ✓  Aborting takeoff...
+
+
+
+    
+  ✓  Aborting takeoff...
+
+
+
+    
+  ✓  Aborting takeoff...
+
+
+
+1 spinner(s) failed.
+Done in 10.10s.
