@@ -1,4 +1,4 @@
-# Bun Spinners
+# Spinners
 
 Simple tool for logging any number of spinners.
 
@@ -11,7 +11,7 @@ Simple tool for logging any number of spinners.
 See `test/index.test.ts`.
 
 ```ts
-import { spinners } from "bun-spinners";
+import { spinners } from "@tsmodule/spinners";
 
 const sleep = (ms: number) => new Promise(
   (resolve) => setTimeout(resolve, ms)
