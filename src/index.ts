@@ -24,6 +24,9 @@ export const spinners = async (
   const spinnerStates: Map<string, SpinnerState> = new Map();
   const spinnerErrors = new Map<string, string>();
 
+  const successes: string[] = [];
+  const failures: [string, string][] = [];
+
   /**
    * Initialize all spinner states to "running".
    */
@@ -90,9 +93,12 @@ export const spinners = async (
           try {
             await fn();
             spinnerStates.set(text, "success");
+            successes.push(text);
           } catch (e) {
             spinnerStates.set(text, "failure");
             spinnerErrors.set(text, String(e));
+
+            failures.push([text, String(e)]);
             failed++;
           } finally {
             finished++;
@@ -102,12 +108,15 @@ export const spinners = async (
     ),
   ]);
 
-  const spinnerResults = Object.fromEntries(spinnerStates);
+  const results = {
+    successes,
+    failures,
+  };
 
   if (failed > 0) {
     // throw `${failed} spinner(s) failed.`;
-    throw spinnerResults;
+    throw results;
   }
 
-  return spinnerResults;
+  return results;
 };
