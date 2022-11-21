@@ -6,24 +6,34 @@ const sleep = (ms: number) => new Promise(
 
 try {
   await spinners({
-    "Starting APU...": async () => {
+    "Set: APU ON": async () => {
+      await sleep(5000);
+      throw "APU failed to start";
+    },
+
+    "Set: Fuel cutoff OFF": async () => {
       await sleep(1000);
     },
 
-    "Starting engines...": async () => {
-      await sleep(5000);
-      throw "Fuel mixture set to cutoff.";
-    },
-
-    "Setting flaps...": async () => {
+    "Set: Flaps 20%": async () => {
       await sleep(2000);
     }
+  }, {
+    title: "Takeoff procedure"
   });
 } catch (e) {
   await spinners({
-    "Aborting takeoff...": async () => {
-      await sleep(3000);
+    "Set: APU OFF": async () => {
+      await sleep(1000);
+    },
+    "Set: Fuel cutoff ON": async () => {
+      await sleep(1000);
+    },
+    "Set: Throttle 0%": async () => {
+      await sleep(1000);
     }
+  }, {
+    title: "Abort procedure"
   });
 
   // eslint-disable-next-line no-console

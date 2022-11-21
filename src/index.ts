@@ -8,9 +8,14 @@ export interface SpinnerConfigs {
 
 export type SpinnerState = "running" | "success" | "failure";
 
+export type SpinnersArgs = {
+  title?: string;
+  spinner?: cliSpinners.SpinnerName;
+};
+
 export const spinners = async (
   configs: SpinnerConfigs,
-  spinner: cliSpinners.SpinnerName = "dots",
+  { title, spinner = "dots" }: SpinnersArgs = {},
 ) => {
   let failed = 0;
   let finished = 0;
@@ -39,6 +44,9 @@ export const spinners = async (
       while (finished < spinnerEntries.length) {
         for (const frame of frames) {
           let frameOutput = "";
+          if (title) {
+            frameOutput += style(title, ["underline"]);
+          }
 
           for (const [text] of spinnerEntries) {
             const state = spinnerStates.get(text);
@@ -66,10 +74,9 @@ export const spinners = async (
             }
           }
 
-          // console.log("\033[H\033[J");
           // eslint-disable-next-line no-console
           console.clear();
-          log(`${frameOutput}\n`, ["grey"]);
+          log(`${frameOutput}`);
           await new Promise((resolve) => setTimeout(resolve, interval));
         }
       }
@@ -97,6 +104,9 @@ export const spinners = async (
   ]);
 
   if (failed > 0) {
-    throw `${failed} spinner(s) failed.`;
+    // throw `${failed} spinner(s) failed.`;
+    throw spinnerErrors;
   }
+
+  return null;
 };
