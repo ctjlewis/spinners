@@ -13,10 +13,15 @@ export type SpinnersArgs = {
   spinner?: cliSpinners.SpinnerName;
 };
 
+export type SpinnerResult = {
+  successes: string[];
+  failures: [string, string][];
+};
+
 export const spinners = async (
   configs: SpinnerConfigs,
   { title, spinner = "dots" }: SpinnersArgs = {},
-) => {
+): Promise<SpinnerResult> => {
   let failed = 0;
   let finished = 0;
 
