@@ -45,7 +45,7 @@ export const spinners = async (
         for (const frame of frames) {
           let frameOutput = "";
           if (title) {
-            frameOutput += style(title, ["underline"]);
+            frameOutput += style(title, ["bold", "underline"]);
           }
 
           for (const [text] of spinnerEntries) {
