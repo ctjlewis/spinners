@@ -105,7 +105,7 @@ export const spinners = async (
 
   if (failed > 0) {
     // throw `${failed} spinner(s) failed.`;
-    throw { ...spinnerErrors };
+    throw Object.fromEntries(spinnerErrors);
   }
 
   return null;
