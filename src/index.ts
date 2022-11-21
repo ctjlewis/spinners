@@ -3,7 +3,7 @@ import cliSpinners from "cli-spinners";
 // import { log } from "debug-logging";
 
 export interface SpinnerConfigs {
-  [text: string]: () => Promise<void>;
+  [text: string]: () => void | Promise<void>;
 }
 
 export type SpinnerState = "running" | "success" | "failure";
