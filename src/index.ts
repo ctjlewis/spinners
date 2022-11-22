@@ -1,6 +1,5 @@
 import { LogStyles, log, style, clear } from "@tsmodule/log";
 import cliSpinners from "cli-spinners";
-// import { log } from "debug-logging";
 
 export interface SpinnerConfigs {
   [text: string]: () => void | Promise<void>;
