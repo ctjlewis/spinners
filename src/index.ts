@@ -11,6 +11,7 @@ export type SpinnerState = "running" | "success" | "failure";
 export type SpinnersArgs = {
   title?: string;
   spinner?: cliSpinners.SpinnerName;
+  flushStdout?: boolean;
 };
 
 export type SpinnerResult = {
@@ -20,7 +21,11 @@ export type SpinnerResult = {
 
 export const spinners = async (
   configs: SpinnerConfigs,
-  { title, spinner = "dots" }: SpinnersArgs = {},
+  {
+    title,
+    spinner = "dots",
+    flushStdout = true,
+  }: SpinnersArgs = {},
 ): Promise<SpinnerResult> => {
   let failed = 0;
   let finished = 0;
@@ -82,7 +87,7 @@ export const spinners = async (
             }
           }
 
-          clear();
+          clear(flushStdout);
           log(`${frameOutput}`);
           await new Promise((resolve) => setTimeout(resolve, interval));
         }
