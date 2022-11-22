@@ -91,12 +91,12 @@
     cli-spinners "^2.7.0"
     debug-logging "^4.0.4"
 
-"@tsmodule/test@^0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@tsmodule/test/-/test-0.0.5.tgz#97a29bbad4464a7acf9c061fdff5d4e0e31dc3f1"
-  integrity sha512-sPL29mFdq5k1H0gq7FQwEXEfz3Y7dmjx9CrK0F1eBVjTUFRie3GY5+Wh8iyuYSx+xA9pjLmrvHwTqOMejauTLA==
+"@tsmodule/test@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@tsmodule/test/-/test-1.0.0.tgz#9694aede072533eac8a93b7cc65a8191e256d60e"
+  integrity sha512-yrPJhizFahKN9TtcQbM430crFEYugK7866h8OgEfs5/bfV/cc+7b8acjAyBGkUIg9O8Oirc7zQsUssv4iGiqUw==
   dependencies:
-    "@tsmodule/log" "^0.4.1"
+    "@tsmodule/log" "^1.0.0"
     "@tsmodule/spinners" "^0.2.6"
     fast-glob "^3.2.11"
     ora "^6.1.2"
