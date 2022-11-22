@@ -1,7 +1,7 @@
 {
   "name": "@tsmodule/spinners",
   "license": "MIT",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "type": "module",
   "types": "dist/index.d.ts",
   "exports": {
@@ -10,7 +10,7 @@
     "./*": "./dist/*/index.js"
   },
   "devDependencies": {
-    "@tsmodule/log": "^1.0.0",
+    "@tsmodule/log": "^1.1.0",
     "@tsmodule/test": "^1.0.0",
     "@tsmodule/tsmodule": "^41.10.0",
     "@types/node": "^18.11.9",
