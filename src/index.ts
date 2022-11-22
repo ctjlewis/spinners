@@ -59,6 +59,7 @@ export const spinners = async (
           let frameOutput = "";
           if (title) {
             frameOutput += style(title, ["bold", "underline"]);
+            frameOutput += "\n\n";
           }
 
           for (const [text] of spinnerEntries) {
@@ -79,11 +80,13 @@ export const spinners = async (
                 break;
             }
 
-            frameOutput += style(`\n  ${prefix}  ${text}`, lineStyles);
+            frameOutput += style(`  ${prefix}  ${text}`, lineStyles);
+            frameOutput += "\n\n";
 
             const errors = spinnerErrors.get(text);
             if (errors) {
               frameOutput += style(`     ${errors}`, ["red"]);
+              frameOutput += "\n\n";
             }
           }
 
