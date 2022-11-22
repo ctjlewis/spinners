@@ -72,10 +72,10 @@
   resolved "https://registry.yarnpkg.com/@tsmodule/log/-/log-1.0.0.tgz#aa843c2fcd890484b168f39c0eb59341a57de997"
   integrity sha512-iA220Jgbwc5ckRIgqg9f7O3k8O0pE3/AdiaFcEeX7BfjmY6G3XqUyFlbC2dVaxopm2iquRZq+Q/1vq1yhucd8g==
 
-"@tsmodule/log@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@tsmodule/log/-/log-1.1.1.tgz#b09129c1329084def8eece5cbb8c1775969605f1"
-  integrity sha512-HD1O6kbhWIcprbad+V7CiEfYoCsXaUHOL73dbsa5EnofDi5v18YdhUIh0DQfWbneOBctagewz5GXoo2tk8R8AA==
+"@tsmodule/log@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@tsmodule/log/-/log-1.1.2.tgz#8a3399b54a8865556843600817970c34e37bd98e"
+  integrity sha512-fJ4J2Lplw3YwzLBqmZtDr0647S3yYUEZvlW1LgyPVIGiV3Jljt0RUhYw9SEVv8ux+laGTHD/QS3zvDtES3CYdg==
 
 "@tsmodule/spinners@^0.4.0":
   version "0.4.0"
