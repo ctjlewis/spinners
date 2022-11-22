@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "@tsmodule/log": "^1.1.0",
-    "@tsmodule/test": "^1.0.0",
+    "@tsmodule/test": "^1.1.0",
     "@tsmodule/tsmodule": "^41.10.0",
     "@types/node": "^18.11.9",
     "@typescript-eslint/eslint-plugin": "^5.44.0",
