@@ -1,7 +1,7 @@
 {
   "name": "@tsmodule/spinners",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "0.3.1",
   "type": "module",
   "types": "dist/index.d.ts",
   "exports": {
@@ -26,7 +26,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ctjlewis/bun-spinners.git"
+    "url": "git+https://github.com/tsmodule/spinners.git"
   },
   "platform": "node",
   "scripts": {
