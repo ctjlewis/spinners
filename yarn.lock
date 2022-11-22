@@ -72,10 +72,10 @@
   resolved "https://registry.yarnpkg.com/@socket.io/component-emitter/-/component-emitter-3.1.0.tgz#96116f2a912e0c02817345b3c10751069920d553"
   integrity sha512-+9jVqKhRSpsc591z5vX+X5Yyw+he/HCB4iQ/RYxw35CEPaY1gnsNE43nf9n9AaYjAQrTiI/mOwKUKdUs9vf7Xg==
 
-"@tsmodule/log@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@tsmodule/log/-/log-0.2.1.tgz#e8609bf64f44b3548cdcd7ef0d3ac4d2a9ab727e"
-  integrity sha512-tTjfXTfSbvuYMQL+X8wjB8MvD5Goyo/Iq8RkFATi0s6rJWFtzXNaAD93S02AaKbzt6SLCITLeBd2tGr7SxfHcg==
+"@tsmodule/log@^0.2.5":
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/@tsmodule/log/-/log-0.2.5.tgz#cedc3d6ce407ed37c3938a7911ffd4b867d86beb"
+  integrity sha512-0lrLaRohNNGA84EiKX5wO+V8Bla6MhT4YrbWDJHnYEOTcpoT7cmJqJVqjZM5gvHVuYR2gj8cFkzjBa5UXm/ITQ==
 
 "@tsmodule/tsmodule@^40.19.0":
   version "40.19.0"
