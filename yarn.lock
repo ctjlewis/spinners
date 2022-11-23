@@ -67,10 +67,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@tsmodule/log@^1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@tsmodule/log/-/log-1.1.2.tgz#8a3399b54a8865556843600817970c34e37bd98e"
-  integrity sha512-fJ4J2Lplw3YwzLBqmZtDr0647S3yYUEZvlW1LgyPVIGiV3Jljt0RUhYw9SEVv8ux+laGTHD/QS3zvDtES3CYdg==
+"@tsmodule/log@^1.1.6":
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/@tsmodule/log/-/log-1.1.6.tgz#afaba0fec25ef0b15b21e34ce9e208b1c6c58890"
+  integrity sha512-jRFTupVl/ZhgAPa+8AI7FGxuG9JAXjnQQb0DcgFD55JQxIHEtNLH/buD3VhRhI7KaJd0pfg5R2v4zLvfQpNbLA==
 
 "@tsmodule/test@^1.2.1":
   version "1.2.1"
