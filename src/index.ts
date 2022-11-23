@@ -8,9 +8,19 @@ export interface SpinnerConfigs {
 export type SpinnerState = "running" | "success" | "failure";
 
 export type SpinnersArgs = {
+  /**
+   * The title of this spinner.
+   */
   title?: string;
+  /**
+   * The type of spinner to use.
+   */
   spinner?: cliSpinners.SpinnerName;
-  flushStdout?: boolean;
+  /**
+   * Whether to flush stdout on each frame (clearing previous contents, "kiosk"
+   * experience).
+   */
+  flush?: boolean;
 };
 
 export type SpinnerResult = {
@@ -23,7 +33,7 @@ export const spinners = async (
   {
     title,
     spinner = "dots",
-    flushStdout = true,
+    flush = false,
   }: SpinnersArgs = {},
 ): Promise<SpinnerResult> => {
   let failed = 0;
@@ -96,7 +106,7 @@ export const spinners = async (
             }
           }
 
-          clear(false);
+          clear(flush);
           log(`${frameOutput}`);
           await new Promise((resolve) => setTimeout(resolve, interval));
         }

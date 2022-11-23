@@ -16,19 +16,9 @@ Bundle styles not found for this project.
   Running post-build setup.  
 
 $ /Users/lewis/Development/tsmodule/spinners/node_modules/.bin/tsc -p tsconfig.json --moduleResolution Node --module ESNext --target ESNext --esModuleInterop true --incremental false --rootDir src --outDir dist --declaration true --noEmit false --emitDeclarationOnly true
-src/index.ts(26,5): error TS6133: 'flushStdout' is declared but its value is never read.
-error Command failed with exit code 2.
-info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
-✖ Failed to generate type declarations.
+✔ Generated declarations for 1 files.
 
-  Error  
-
-$ /Users/lewis/Development/tsmodule/spinners/node_modules/.bin/tsc -p tsconfig.json --moduleResolution Node --module ESNext --target ESNext --esModuleInterop true --incremental false --rootDir src --outDir dist --declaration true --noEmit false --emitDeclarationOnly true
-src/index.ts(26,5): error TS6133: 'flushStdout' is declared but its value is never read.
-info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
-
-error Command failed with exit code 2.
-
+Build complete.
 
 $ tsm-test
 
@@ -139,4 +129,4 @@ $ node --no-warnings --loader file:///Users/lewis/Development/tsmodule/spinners/
   
   
   
-Done in 9.00s.
+Done in 8.86s.
