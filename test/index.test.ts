@@ -1,4 +1,4 @@
-import { spinners } from "../dist/index.js";
+import { spinners } from "../src";
 
 const sleep = (ms: number) => new Promise(
   (resolve) => setTimeout(resolve, ms)

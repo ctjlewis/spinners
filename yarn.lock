@@ -67,10 +67,15 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@tsmodule/log@^1.1.6":
-  version "1.1.6"
-  resolved "https://registry.yarnpkg.com/@tsmodule/log/-/log-1.1.6.tgz#afaba0fec25ef0b15b21e34ce9e208b1c6c58890"
-  integrity sha512-jRFTupVl/ZhgAPa+8AI7FGxuG9JAXjnQQb0DcgFD55JQxIHEtNLH/buD3VhRhI7KaJd0pfg5R2v4zLvfQpNbLA==
+"@tsmodule/log@^1.3.1":
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/@tsmodule/log/-/log-1.3.1.tgz#ef3ff19ba53a9a72e585e3816652190059b8f480"
+  integrity sha512-TAV5xcMeVYEtwK+6JzBanvoU1I9e6aYujRR2TBoGYeYs1VEu3EWTV+36JCvbS0XzTesFHrQt+9o0o/HBSAhVJw==
+
+"@tsmodule/spinners@^0.4.4":
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/@tsmodule/spinners/-/spinners-0.4.4.tgz#9813892d4ea69d6fc9d1fa6e32ed04d85370c3f1"
+  integrity sha512-snmuHcDq+VSv00GMBgJodijJkP/0EAPgUrlInKL6wkJgZHzazSM0wbuO+BRj5ziSfWJww6ja4dnW+ydVYgxDzg==
 
 "@tsmodule/test@^1.2.1":
   version "1.2.1"
@@ -84,6 +89,13 @@
   dependencies:
     esbuild "^0.15.15"
     typescript "^4.9.3"
+
+"@types/cli-cursor@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@types/cli-cursor/-/cli-cursor-3.0.1.tgz#3b7e3a8acd65865ecf2e1a9318c95ad8345c726a"
+  integrity sha512-XhmD4j6Bl2OPdN3RolHLMzJ3oEUyL6yfI41W2LUMq9ywMuWY8KEV3w4PGadY61Y4/QqjWssdaPCALkEnRzjqXA==
+  dependencies:
+    cli-cursor "*"
 
 "@types/json-schema@^7.0.9":
   version "7.0.11"
@@ -430,6 +442,18 @@ clean-yaml-object@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/clean-yaml-object/-/clean-yaml-object-0.1.0.tgz#63fb110dc2ce1a84dc21f6d9334876d010ae8b68"
   integrity sha512-3yONmlN9CSAkzNwnRCiJQ7Q2xK5mWuEfL3PuTZcAUzhObbXsfsnMptJzXwz93nc5zn9V9TwCVMmV7w4xsm43dw==
+
+cli-clear@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/cli-clear/-/cli-clear-1.0.4.tgz#42cf3052f25b7068386fb7dbaee82d534b64c899"
+  integrity sha512-/WdwW67j4CO5PHQtd7+qisNNxHxbAcuq3s9T64pz3hiToFPHRpkv+3YdwOPKQlk8twroU76feyHmJHjJ0K2p6w==
+
+cli-cursor@*, cli-cursor@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/cli-cursor/-/cli-cursor-4.0.0.tgz#3cecfe3734bf4fe02a8361cbdc0f6fe28c6a57ea"
+  integrity sha512-VGtlMu3x/4DOtIUwEkRezxUZ2lBacNJCHash0N0WeZDBS+7Ux1dm3XWAgWYxLJFMMdOeXMHXorshEFhbMSGelg==
+  dependencies:
+    restore-cursor "^4.0.0"
 
 cli-spinners@^2.7.0:
   version "2.7.0"
@@ -1269,6 +1293,11 @@ micromatch@^4.0.4:
     braces "^3.0.2"
     picomatch "^2.3.1"
 
+mimic-fn@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-2.1.0.tgz#7ed2c2ccccaf84d3ffcb7a69b57711fc2083401b"
+  integrity sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==
+
 mimic-fn@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-4.0.0.tgz#60a90550d5cb0b239cca65d893b1a53b29871ecc"
@@ -1317,6 +1346,13 @@ once@^1.3.0:
   integrity sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==
   dependencies:
     wrappy "1"
+
+onetime@^5.1.0:
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/onetime/-/onetime-5.1.2.tgz#d0e96ebb56b07476df1dd9c4806e5237985ca45e"
+  integrity sha512-kbpaSSGJTWdAY5KPVeMOKXSrPtr8C8C7wodJbcsd51jRnmD+GZu8Y0VoU6Dm5Z4vWr0Ig/1NKuWRKf7j5aaYSg==
+  dependencies:
+    mimic-fn "^2.1.0"
 
 optionator@^0.9.1:
   version "0.9.1"
@@ -1495,6 +1531,14 @@ resolve-from@^5.0.0:
   resolved "https://registry.yarnpkg.com/resolve-from/-/resolve-from-5.0.0.tgz#c35225843df8f776df21c57557bc087e9dfdfc69"
   integrity sha512-qYg9KP24dD5qka9J47d0aVky0N+b4fTU89LN9iDnjB5waksiC49rvMB0PrUJQGoTmH50XPiqOvAjDfaijGxYZw==
 
+restore-cursor@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/restore-cursor/-/restore-cursor-4.0.0.tgz#519560a4318975096def6e609d44100edaa4ccb9"
+  integrity sha512-I9fPXU9geO9bHOt9pHHOhOkYerIMsmVaWB0rA2AI9ERh/+x/i7MV5HKBNrg+ljO5eoPVgCcnFuRjJ9uH6I/3eg==
+  dependencies:
+    onetime "^5.1.0"
+    signal-exit "^3.0.2"
+
 reusify@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/reusify/-/reusify-1.0.4.tgz#90da382b1e126efc02146e90845a88db12925d76"
@@ -1540,7 +1584,7 @@ shebang-regex@^3.0.0:
   resolved "https://registry.yarnpkg.com/shebang-regex/-/shebang-regex-3.0.0.tgz#ae16f1644d873ecad843b0307b143362d4c42172"
   integrity sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==
 
-signal-exit@^3.0.7:
+signal-exit@^3.0.2, signal-exit@^3.0.7:
   version "3.0.7"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.7.tgz#a9a1767f8af84155114eaabd73f99273c8f59ad9"
   integrity sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==

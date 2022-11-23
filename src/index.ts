@@ -1,4 +1,4 @@
-import { LogStyles, log, style, clear } from "@tsmodule/log";
+import { LogStyles, log, style, clear, clearStart } from "@tsmodule/log";
 import cliSpinners from "cli-spinners";
 
 export interface SpinnerConfigs {
@@ -46,6 +46,8 @@ export const spinners = async (
     );
   }
 
+  clearStart();
+
   await Promise.all([
     /**
      * Run spinners.
@@ -64,7 +66,12 @@ export const spinners = async (
           for (const [text] of spinnerEntries) {
             const state = spinnerStates.get(text);
 
-            let prefix = frame;
+            /**
+             * If stdout is not a TTY, only show the first frame. This will let
+             * us deduplicate all the frames of an in-progress spinner as just
+             * one frame.
+             */
+            let prefix = process.stdout.isTTY ? frame : frames[0];
             const lineStyles: LogStyles[] = ["bold"];
 
             switch (state) {
@@ -89,7 +96,7 @@ export const spinners = async (
             }
           }
 
-          clear(flushStdout);
+          clear(false);
           log(`${frameOutput}`);
           await new Promise((resolve) => setTimeout(resolve, interval));
         }
