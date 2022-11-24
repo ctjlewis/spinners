@@ -12,7 +12,7 @@
   "devDependencies": {
     "@tsmodule/log": "^1.4.2",
     "@tsmodule/spinners": "^0.4.4",
-    "@tsmodule/test": "^1.2.2",
+    "@tsmodule/test": "^1.2.4",
     "@tsmodule/tsmodule": "^41.10.0",
     "@types/cli-cursor": "^3.0.1",
     "@types/node": "^18.11.9",

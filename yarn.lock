@@ -77,10 +77,10 @@
   resolved "https://registry.yarnpkg.com/@tsmodule/spinners/-/spinners-0.4.4.tgz#9813892d4ea69d6fc9d1fa6e32ed04d85370c3f1"
   integrity sha512-snmuHcDq+VSv00GMBgJodijJkP/0EAPgUrlInKL6wkJgZHzazSM0wbuO+BRj5ziSfWJww6ja4dnW+ydVYgxDzg==
 
-"@tsmodule/test@^1.2.2":
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/@tsmodule/test/-/test-1.2.2.tgz#b8d3a9dcd64754e2622a060c135963ac34eb8559"
-  integrity sha512-fsz79LRxwvZm1yu123825/VvJp2NgADyvgDQ2QnAKlD2gwD7YhnXfLmpg0gHgK+4EsQWHiPHK7iPj1ikbjx/Uw==
+"@tsmodule/test@^1.2.4":
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/@tsmodule/test/-/test-1.2.4.tgz#9fad3ac92c9663799f9bdda7b91f01d17d5a230f"
+  integrity sha512-/bA1WC3RLZlNBsF6Vr9xx2eA4VUlEWCSPk4N5q9wyyW2zjcV1LGkexvmn9mCgADuLQ09+AidquQZkvu+MVSAQw==
 
 "@tsmodule/tsmodule@^41.10.0":
   version "41.10.0"
