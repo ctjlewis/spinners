@@ -1,4 +1,4 @@
-import { LogStyles, log, style, clear, clearStart } from "@tsmodule/log";
+import { LogStyles, log, style, clear, pushToTop } from "@tsmodule/log";
 import cliSpinners from "cli-spinners";
 
 export interface SpinnerConfigs {
@@ -56,7 +56,7 @@ export const spinners = async (
     );
   }
 
-  clearStart();
+  pushToTop();
 
   await Promise.all([
     /**
@@ -106,7 +106,7 @@ export const spinners = async (
             }
           }
 
-          clear(flush);
+          clear({ flush, overwrite: true });
           log(`${frameOutput}`);
           await new Promise((resolve) => setTimeout(resolve, interval));
         }
