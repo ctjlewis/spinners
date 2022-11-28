@@ -1,7 +1,7 @@
 {
   "name": "@tsmodule/spinners",
   "license": "MIT",
-  "version": "0.5.3",
+  "version": "0.6.0",
   "type": "module",
   "types": "dist/index.d.ts",
   "exports": {
@@ -10,10 +10,9 @@
     "./*": "./dist/*/index.js"
   },
   "devDependencies": {
-    "@tsmodule/log": "^1.4.4",
-    "@tsmodule/spinners": "^0.5.2",
-    "@tsmodule/test": "^1.2.4",
-    "@tsmodule/tsmodule": "^41.11.0",
+    "@tsmodule/log": "^2.1.5",
+    "@tsmodule/test": "^1.2.5",
+    "@tsmodule/tsmodule": "^41.23.0",
     "@types/node": "^18.11.9",
     "@typescript-eslint/eslint-plugin": "^5.44.0",
     "@typescript-eslint/parser": "^5.44.0",
@@ -39,5 +38,8 @@
   },
   "engines": {
     "node": ">=14"
+  },
+  "dependencies": {
+    "@tsmodule/spinners": "^0.5.3"
   }
 }

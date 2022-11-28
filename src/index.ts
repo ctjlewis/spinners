@@ -1,4 +1,4 @@
-import { LogStyles, log, style, clear, pushToTop } from "@tsmodule/log";
+import { LogStyles, style, pushToTop, preLog, hideCursor, clear, showCursor } from "@tsmodule/log";
 import cliSpinners from "cli-spinners";
 
 export interface SpinnerConfigs {
@@ -64,6 +64,7 @@ export const spinners = async (
      */
     (async () => {
       const { frames, interval } = cliSpinners[spinner];
+      let lastLog: string | undefined;
 
       while (finished < spinnerEntries.length) {
         for (const frame of frames) {
@@ -106,8 +107,14 @@ export const spinners = async (
             }
           }
 
-          clear({ flush, overwrite: true });
-          log(`${frameOutput}`);
+          if (lastLog) {
+            clear({ flush, overwrite: true, lines: lastLog ? lastLog.split("\n").length + 1 : 0 });
+          }
+          preLog(frameOutput);
+          hideCursor();
+          // console.log(`${frameOutput}`);
+
+          lastLog = frameOutput;
           await new Promise((resolve) => setTimeout(resolve, interval));
         }
       }
@@ -147,5 +154,6 @@ export const spinners = async (
     throw results;
   }
 
+  showCursor();
   return results;
 };
